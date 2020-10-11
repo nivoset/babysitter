@@ -39,19 +39,13 @@ export const rootReducer = (store = defaultState, action) => {
 }
 
 //Action generators
-export const updateStartDate = (dispatch) => (startDate) => {
-  dispatch({ type: UPDATE_START_DATE, payload: startDate})
-}
+export const updateStartDate = (startDate) => ({ type: UPDATE_START_DATE, payload: startDate})
 
-export const updateBedtimeDate = (dispatch) => (endDate) => {
-  dispatch({ type: UPDATE_BEDTIME_DATE, payload: endDate})
-}
+export const updateBedtimeDate = (endDate) => ({ type: UPDATE_BEDTIME_DATE, payload: endDate})
 
-export const updateEndDate = (dispatch) => (endDate) => {
-  dispatch({ type: UPDATE_END_DATE, payload: endDate})
-}
+export const updateEndDate = (endDate) => ({ type: UPDATE_END_DATE, payload: endDate})
 
-//Selectors
+//Selectors (offset hours here help clean up overnight changes)
 export const selectStartDate = (state) => addHours(state.startDateTime, 12);
 export const selectBedtime = (state) => addHours(state.bedtimeDateTime, 12);
 export const selectEndDate = (state) => addHours(state.endDateTime, 12);

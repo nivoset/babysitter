@@ -22,13 +22,13 @@ export const BabysitterController = ()  =>{
   return (
     <div className="display-items">
       <div id="start-date" title="Start Time">
-        <DatePicker time={startDate} updateFunction={updateStartDate(dispatch)} />
+        <DatePicker time={startDate} updateFunction={(date) => dispatch(updateStartDate(date))} />
       </div>
       <div id="bedtime" title="Bed Time">
-        <DatePicker time={bedtime} updateFunction={updateBedtimeDate(dispatch)} />
+        <DatePicker time={bedtime} updateFunction={(date) => dispatch(updateBedtimeDate(date))} />
       </div>
       <div id="end-date" title="End Time">
-        <DatePicker time={endDate} updateFunction={updateEndDate(dispatch)} />
+        <DatePicker time={endDate} updateFunction={(date) => dispatch(updateEndDate(date))} />
       </div>
       <div id="display" title="Display wage earned">
         {wageEarned}
