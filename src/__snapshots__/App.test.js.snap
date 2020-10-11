@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders learn react link 1`] = `
+<div
+  className="display-items"
+>
+  <div
+    id="start-date"
+    title="Start Time"
+  >
+    <div
+      className="MuiFormControl-root MuiTextField-root"
+      format="hh:mm a"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+    >
+      <div
+        className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+        onClick={[Function]}
+      >
+        <input
+          aria-invalid={false}
+          autoFocus={false}
+          className="MuiInputBase-input MuiInput-input"
+          disabled={false}
+          onAnimationStart={[Function]}
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          readOnly={true}
+          required={false}
+          type="text"
+          value="05:00 PM"
+        />
+      </div>
+      
+    </div>
+  </div>
+  <div
+    id="bedtime"
+    title="Bed Time"
+  >
+    <div
+      className="MuiFormControl-root MuiTextField-root"
+      format="hh:mm a"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+    >
+      <div
+        className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+        onClick={[Function]}
+      >
+        <input
+          aria-invalid={false}
+          autoFocus={false}
+          className="MuiInputBase-input MuiInput-input"
+          disabled={false}
+          onAnimationStart={[Function]}
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          readOnly={true}
+          required={false}
+          type="text"
+          value="09:00 PM"
+        />
+      </div>
+      
+    </div>
+  </div>
+  <div
+    id="end-date"
+    title="End Time"
+  >
+    <div
+      className="MuiFormControl-root MuiTextField-root"
+      format="hh:mm a"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+    >
+      <div
+        className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+        onClick={[Function]}
+      >
+        <input
+          aria-invalid={false}
+          autoFocus={false}
+          className="MuiInputBase-input MuiInput-input"
+          disabled={false}
+          onAnimationStart={[Function]}
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          readOnly={true}
+          required={false}
+          type="text"
+          value="10:00 PM"
+        />
+      </div>
+      
+    </div>
+  </div>
+  <div
+    id="display"
+    title="Display wage earned"
+  >
+    wages earned= $56
+  </div>
+</div>
+`;
