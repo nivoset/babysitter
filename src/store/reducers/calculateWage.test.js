@@ -20,10 +20,23 @@ test("null date returns static message", () => {
 });
 
 test("working 1 hour before bedtime", () => {
-  jest.spyOn(dateFNS, "isWithinInterval").and.returnValue(true);
   expect(calculateWageEarned({
-    startDateTime: set(new Date(), { hours: 18, minutes: 30 }), 
-    bedtimeDateTime: set(new Date(), { hours: 20, minutes: 0 }), 
-    endDateTime: set(new Date(), { hours: 19, minutes: 0 }),
-  })).toEqual("Invalid dates");
+    startDateTime: set(new Date(), { hours: 9, minutes: 30 }), 
+    bedtimeDateTime: set(new Date(), { hours: 11, minutes: 0 }), 
+    endDateTime: set(new Date(), { hours: 10, minutes: 0 }),
+  })).toEqual("wages earned= $12");
+});
+test("working 1 hour before bedtime, 1 hour after bedtime", () => {
+  expect(calculateWageEarned({
+    startDateTime: set(new Date(), { hours: 10, minutes: 0 }), 
+    bedtimeDateTime: set(new Date(), { hours: 11, minutes: 0 }), 
+    endDateTime: set(new Date(), { hours: 12, minutes: 0 }),
+  })).toEqual("wages earned= $20");
+});
+test("working 1 hour before bedtime, 1 hour after bedtime, and 1 hour after midnight", () => {
+  expect(calculateWageEarned({
+    startDateTime: set(new Date(), { hours: 10, minutes: 0 }), 
+    bedtimeDateTime: set(new Date(), { hours: 11, minutes: 0 }), 
+    endDateTime: set(new Date(), { hours: 13, minutes: 0 }),
+  })).toEqual("wages earned= $36");
 });

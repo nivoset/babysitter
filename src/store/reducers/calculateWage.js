@@ -1,11 +1,11 @@
-import { differenceInMinutes, isBefore, addDays, set, isWithinInterval } from "date-fns";
+import { differenceInMinutes, isBefore, addDays, set, isWithinInterval, isAfter, } from "date-fns";
 
 const endDateLimit = set(new Date(), { hours: 16, minutes: 0});
 
 const nightStart = set(new Date(), { hours: 5, minutes: 0});
-const midnight = set(new Date(), { hours: 12, minutes: 0});
 
 export const calculateWageEarned = ({startDateTime, bedtimeDateTime, endDateTime}) => {
+  const midnight = set(new Date(), { hours: 12, minutes: 0});
   const wages = [
     { 
       start: nightStart,
@@ -30,7 +30,11 @@ export const calculateWageEarned = ({startDateTime, bedtimeDateTime, endDateTime
   const endDateIsNextDay = isBefore(endDateTime, startDateTime);
   const effectiveEndDate = endDateIsNextDay ? addDays(endDateTime, 1) : endDateTime;
 
-  const wageEarned = wages.reduce((acc, wage) => acc + timeInSlot(wage, startDateTime, effectiveEndDate), 0);
+  const wageEarned = wages.reduce((acc, wage) => {
+    const we = timeInSlot(wage, startDateTime, effectiveEndDate);
+    console.log(wage, we)
+    return acc + we
+  }, 0);
 
 
   return `wages earned= $${wageEarned}`;
@@ -47,6 +51,8 @@ const timeInSlot = (slot, startDate, endDate) => {
     minutes = differenceInMinutes(slot.end, startDate);
   } else if (endInSlot) {
     minutes = differenceInMinutes(endDate, slot.start);
+  } else if (isAfter(slot.start, startDate) && isBefore(slot.end, endDate)) {
+    minutes = differenceInMinutes(slot.end, slot.start);
   }
   
   return (slot.roundUp ? Math.ceil(minutes / 60) : minutes / 60) * slot.wage;

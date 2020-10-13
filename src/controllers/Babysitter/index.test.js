@@ -1,12 +1,28 @@
 import React from "react";
-import { shallow } from "enzyme"
+import { set } from "date-fns";
+import { mount } from "enzyme"
 import { BabysitterController } from "./index"
+import { render } from "@testing-library/react"
 import { Provider } from "react-redux";
-import configureStore from "redux-mock-store";
+import { DatePicker } from "../../components/DatePicker/index"
+import { MockStoreCreator } from "redux-mock-store"
 
-const mockStore = configureStore([]);
+const mockStore = MockStoreCreator({});
 
-it("Renders without crashing", () => {
-  const store = mockStore({});
-  shallow(<Provider store={store}><BabysitterController /></Provider>);
+mockStore.initialState = {
+  startDateTime: set(new Date(), { hours: 10, minutes: 0}),
+  bedtimeDateTime: set(new Date(), { hours: 10, minutes: 0}),
+  endDateTime: set(new Date(), { hours: 10, minutes: 0}),
+}
+
+xit("Renders without crashing", () => {
+
+  const initialState = {
+    startDateTime: set(new Date(), { hours: 10, minutes: 0}),
+    bedtimeDateTime: set(new Date(), { hours: 10, minutes: 0}),
+    endDateTime: set(new Date(), { hours: 10, minutes: 0}),
+  };
+  const component = render(<BabysitterController />, mockStore);
+  console.error(component.find(DatePicker).length)
+
 });
