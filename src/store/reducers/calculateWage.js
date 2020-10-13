@@ -27,11 +27,7 @@ export const calculateWageEarned = ({startDateTime, bedtimeDateTime, endDateTime
   ];
   if (!startDateTime || !bedtimeDateTime || !endDateTime) return "Invalid dates";
 
-  const endDateIsNextDay = isBefore(endDateTime, startDateTime);
-  const effectiveEndDate = endDateIsNextDay ? addDays(endDateTime, 1) : endDateTime;
-
-  const wageEarned = wages.reduce((acc, wage) => acc + timeInSlot(wage, startDateTime, effectiveEndDate), 0);
-
+  const wageEarned = wages.reduce((acc, wage) => acc + timeInSlot(wage, startDateTime, endDateTime), 0);
 
   return `wages earned= $${wageEarned}`;
 }
