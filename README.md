@@ -23,12 +23,12 @@ The page will reload if you make edits.<br />
 
 Launches the test runner in the interactive watch mode.<br />
 
-### `yarn test:coverage` / `npm run test:coverage
+### `yarn test:coverage` / `npm run test:coverage`
 
 Launches the test runner with coverage.<br />
 This is needed as jest coverage fails when calling interactive mode.
 
-### `yarn build` / `npm run build
+### `yarn build` / `npm run build`
 
 Builds the app for production to the `build` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.
