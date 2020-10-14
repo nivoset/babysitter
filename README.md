@@ -1,27 +1,37 @@
+# Babysitter
+
+A web server that lets you set start time, bedtime and stop time, and uses that to calculate wage earned.
+written using nodejs / react / redux / enzyme. i didn't get the final bit of testing for the components in the main app fully finished. I normally do more testing, however i was juggling a 4 year old the whole time I got to work on this as my wife is sick and kids need to play.
+
+
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `yarn start`
+### `yarn` / `npm install`
+
+Installs required libraries, required first step
+
+### `yarn start` / `npm start`
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
-### `yarn test`
+### `yarn test` / `npm test`
 
 Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+### `yarn test:coverage` / `npm run test:coverage
+
+Launches the test runner with coverage.<br />
+This is needed as jest coverage fails when calling interactive mode.
+
+### `yarn build` / `npm run build
 
 Builds the app for production to the `build` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
