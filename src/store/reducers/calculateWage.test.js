@@ -1,4 +1,4 @@
-import dateFNS, { set } from "date-fns";
+import { set } from "date-fns";
 import { calculateWageEarned } from "./calculateWage"
 
 test("null date returns static message", () => {

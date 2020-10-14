@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders without crashing 1`] = `
+<DocumentFragment>
+  <div
+    class="display-items"
+  >
+    <div
+      id="start-date"
+      title="Start Time"
+    >
+      <div
+        class="MuiFormControl-root MuiTextField-root"
+        format="hh:mm a"
+      >
+        <div
+          class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+        >
+          <input
+            aria-invalid="false"
+            class="MuiInputBase-input MuiInput-input"
+            readonly=""
+            type="text"
+            value="05:00 PM"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      id="bedtime"
+      title="Bed Time"
+    >
+      <div
+        class="MuiFormControl-root MuiTextField-root"
+        format="hh:mm a"
+      >
+        <div
+          class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+        >
+          <input
+            aria-invalid="false"
+            class="MuiInputBase-input MuiInput-input"
+            readonly=""
+            type="text"
+            value="09:00 PM"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      id="end-date"
+      title="End Time"
+    >
+      <div
+        class="MuiFormControl-root MuiTextField-root"
+        format="hh:mm a"
+      >
+        <div
+          class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+        >
+          <input
+            aria-invalid="false"
+            class="MuiInputBase-input MuiInput-input"
+            readonly=""
+            type="text"
+            value="10:00 PM"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      id="display"
+      title="Display wage earned"
+    >
+      wages earned= $56
+    </div>
+  </div>
+</DocumentFragment>
+`;

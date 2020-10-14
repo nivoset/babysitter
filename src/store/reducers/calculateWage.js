@@ -1,10 +1,9 @@
-import { differenceInMinutes, isBefore, addDays, set, isWithinInterval, isAfter, } from "date-fns";
+import { differenceInMinutes, isBefore, set, isWithinInterval, isAfter, } from "date-fns";
 
-const endDateLimit = set(new Date(), { hours: 16, minutes: 0});
-
-const nightStart = set(new Date(), { hours: 5, minutes: 0});
 
 export const calculateWageEarned = ({startDateTime, bedtimeDateTime, endDateTime}) => {
+  const endDateLimit = set(new Date(), { hours: 16, minutes: 0});
+  const nightStart = set(new Date(), { hours: 5, minutes: 0});
   const midnight = set(new Date(), { hours: 12, minutes: 0});
   const wages = [
     { 
