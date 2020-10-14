@@ -3,6 +3,13 @@
 A web server that lets you set start time, bedtime and stop time, and uses that to calculate wage earned.
 written using nodejs / react / redux / enzyme. i didn't get the final bit of testing for the components in the main app fully finished. I normally do more testing, however i was juggling a 4 year old the whole time I got to work on this as my wife is sick and kids need to play.
 
+## Some notes and questions
+* So no pay for partial hours, however does that mean everything only starts and ends on an hour? no partial hours? i used time input items, so it doesn't work quite as easily (i probably did make this harder for myself)
+* bedtime wasn't defined as a time, so i just added another widget to do that as well as this seemed correct but wasn't called out.
+
+* if you dont want to download everything, you can run with the command `yarn start:server` or `npm run start:server`
+* browse the coverage folder to see coverage without running it
+* built version as well as running server added, so no need to build if you dont want.
 
 ## Available Scripts
 

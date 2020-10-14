@@ -12,6 +12,7 @@
     "date-fns": "^2.16.1",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.5",
+    "http-server": "^0.12.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.1",
@@ -21,6 +22,7 @@
     "redux-mock-store": "^1.5.4"
   },
   "scripts": {
+    "start:server": "npx http-server ./build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

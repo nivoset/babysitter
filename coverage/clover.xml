@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1602641031031" clover="3.2.0">
+  <project timestamp="1602641031031" name="All files">
+    <metrics statements="56" coveredstatements="53" conditionals="26" coveredconditionals="26" methods="19" coveredmethods="16" elements="101" coveredelements="95" complexity="0" loc="56" ncloc="56" packages="5" files="7" classes="7"/>
+    <package name="src">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="App.js" path="C:\code\node\kata\babysitter\src\App.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="7" count="1" type="stmt"/>
+      </file>
+      <file name="index.js" path="C:\code\node\kata\babysitter\src\index.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="6" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.DatePicker">
+      <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+      <file name="index.js" path="C:\code\node\kata\babysitter\src\components\DatePicker\index.js">
+        <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+        <line num="6" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="7" count="15" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.controllers.Babysitter">
+      <metrics statements="10" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="1"/>
+      <file name="index.js" path="C:\code\node\kata\babysitter\src\controllers\Babysitter\index.js">
+        <metrics statements="10" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="1"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="16" count="4" type="stmt"/>
+        <line num="17" count="4" type="stmt"/>
+        <line num="18" count="4" type="stmt"/>
+        <line num="19" count="4" type="stmt"/>
+        <line num="20" count="4" type="stmt"/>
+        <line num="22" count="4" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.store">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.js" path="C:\code\node\kata\babysitter\src\store\index.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="4" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.store.reducers">
+      <metrics statements="41" coveredstatements="41" conditionals="24" coveredconditionals="24" methods="11" coveredmethods="11"/>
+      <file name="calculateWage.js" path="C:\code\node\kata\babysitter\src\store\reducers\calculateWage.js">
+        <metrics statements="21" coveredstatements="21" conditionals="19" coveredconditionals="19" methods="3" coveredmethods="3"/>
+        <line num="4" count="6" type="stmt"/>
+        <line num="5" count="15" type="stmt"/>
+        <line num="6" count="15" type="stmt"/>
+        <line num="7" count="15" type="stmt"/>
+        <line num="8" count="15" type="stmt"/>
+        <line num="27" count="15" type="cond" truecount="5" falsecount="0"/>
+        <line num="29" count="21" type="stmt"/>
+        <line num="31" count="7" type="stmt"/>
+        <line num="34" count="6" type="stmt"/>
+        <line num="35" count="21" type="stmt"/>
+        <line num="36" count="21" type="stmt"/>
+        <line num="38" count="21" type="stmt"/>
+        <line num="39" count="21" type="cond" truecount="4" falsecount="0"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="41" count="20" type="cond" truecount="2" falsecount="0"/>
+        <line num="42" count="2" type="stmt"/>
+        <line num="43" count="18" type="cond" truecount="2" falsecount="0"/>
+        <line num="44" count="7" type="stmt"/>
+        <line num="45" count="11" type="cond" truecount="4" falsecount="0"/>
+        <line num="46" count="5" type="stmt"/>
+        <line num="49" count="21" type="cond" truecount="2" falsecount="0"/>
+      </file>
+      <file name="index.js" path="C:\code\node\kata\babysitter\src\store\reducers\index.js">
+        <metrics statements="20" coveredstatements="20" conditionals="5" coveredconditionals="5" methods="8" coveredmethods="8"/>
+        <line num="5" count="5" type="stmt"/>
+        <line num="6" count="5" type="stmt"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="9" count="5" type="stmt"/>
+        <line num="10" count="5" type="stmt"/>
+        <line num="11" count="5" type="stmt"/>
+        <line num="13" count="5" type="stmt"/>
+        <line num="20" count="5" type="cond" truecount="1" falsecount="0"/>
+        <line num="21" count="8" type="cond" truecount="4" falsecount="0"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="37" count="5" type="stmt"/>
+        <line num="42" count="5" type="stmt"/>
+        <line num="44" count="5" type="stmt"/>
+        <line num="46" count="5" type="stmt"/>
+        <line num="49" count="5" type="stmt"/>
+        <line num="50" count="5" type="stmt"/>
+        <line num="51" count="5" type="stmt"/>
+        <line num="52" count="5" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
